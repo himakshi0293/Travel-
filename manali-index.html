@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tour-style.css">
+    
+    <title>Manali</title>
+</head>
+<body>
+    <nav class="navbar background" >
+        <ul class="nav-list ">
+            <div class="logo"><img src="img/img.jpg" aHlt="logo"></div>
+            <li><a href="index.html">Home</a></li>
+           <li><a href ="#itinerary">Itinerary</a></li>
+           <li><a href="manali-places.html" target="_self" > Places To Visit</a></li>
+          <li><a href="manali-things.html" target="_self">Things To Do</a></li>
+          <li><button id="book-now">Book Now</button> </li>
+        </ul>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Book Now</h2>
+              </div>
+              <div class="modal-body">
+                <section>
+                    <div class="elem-group">
+                      <label for="name">Your Name</label>
+                      <input type="text" id="name" name="visitor_name" placeholder="Abc" pattern=[A-Z\sa-z]{3,20} required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="email">Your E-mail</label>
+                      <input type="email" id="email" name="visitor_email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="phone">Your Phone</label>
+                      <input type="tel" id="phone" name="visitor_phone" placeholder="902-847-8276" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                    </div>
+                    <hr>
+                    <div class="elem-group inlined">
+                      <label for="adult">Adults</label>
+                      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="child">Children</label>
+                      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkin-date">Check-in Date</label>
+                      <input type="date" id="checkin-date" name="checkin" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkout-date">Check-out Date</label>
+                      <input type="date" id="checkout-date" name="checkout" required>
+                    </div>
+                    <hr>
+                    <div class="elem-group">
+                      <label for="message">Anything Else?</label>
+                      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                    </div>
+                    <button type="submit" class="button">Book Your Package</button>
+                  </section>
+            
+              </div>
+              <div class="modal-footer">
+                <h3></h3>
+                <p><br>
+                <br>
+                </p>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <script>
+        var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("book-now");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+var currentDateTime = new Date();
+var year = currentDateTime.getFullYear();
+var month = (currentDateTime.getMonth() + 1);
+var date = (currentDateTime.getDate() + 1);
+
+if(date < 10) {
+  date = '0' + date;
+}
+if(month < 10) {
+  month = '0' + month;
+}
+
+var dateTomorrow = year + "-" + month + "-" + date;
+var checkinElem = document.querySelector("#checkin-date");
+var checkoutElem = document.querySelector("#checkout-date");
+
+checkinElem.setAttribute("min", dateTomorrow);
+
+checkinElem.onchange = function () {
+    checkoutElem.setAttribute("min", this.value);
+}
+    </script> 
+   
+   <div class="alert" id="home">
+    <strong ><b>Warning!</b></strong>
+    <p class="alert-font">Covid-19 cases are increasing day by day.Its mandatory to wear mask and mantain social distancing<br>
+      Check the State Wise latest guidelined for Covid-19.<a href="covidguidelines.html">Check details</a>
+  </p>
+  </div>
+
+    <section class="background firstSection">
+        <div class="box-main" id="home">
+            <div class="firsthalf">
+                <h1 class="text-big">Manali Deluxe - Say goodbye to Stress</h1>
+                <div class="entity-header-text holiday-duration">
+                    4 days , 3 nights<br>
+                    INR 6,999 <div class="txt">per person</div>
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+   <div class="page-content-wrapper true " id="home">
+       <div class="main-section-wrapper">
+        <section class="pageContentSection">
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Duration</h3>
+                <div class="more-info-description">
+                  4 days , 3 nights<br> That promises you to have sweetest memories.
+
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Pricing</h3>
+                <div class="more-info-description">
+               INR 6,999 <br>
+               including hotel stay and car rent  for sight seeing.
+                </div>
+            </div>
+            <div class="more-info-box"> 
+                 <h3 class="more-info-heading">Holiday</h3>
+                 <div class="more-info-description">
+                    Trip to Manali and nearby areas.
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Places to Visit</h3>
+                <div class="more-info-description">
+                    
+                            Rohtang Pass<br>
+                            Solang Valley<br>
+                            Old Manali<br>
+                            Naggar<br>
+                    
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Things to do</h3>
+                <div class="more-info-description">
+                   
+                       Temples And Monasteries<br>
+                        Hot Springs<br>
+                        Mall Road<br>
+                  
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Places to eat</h3>
+                <div class="more-info-description">
+                  
+                       The Lazy Dog<br>
+                       Chopsticks<br>
+                       casa Bella Vista<br>
+                  
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Resorts</h3>
+                <div class="more-info-description">
+                   The Orchard Greens
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Weather and Best Time</h3>
+                <div class="more-info-description">
+                  Best time to spend your time is march to september . Enjoy your time and escape from the hot summers . 
+                </div>
+            </div>
+            </section>
+            </div>
+            </div>
+<section class="space"></section>            
+<section class="worth" id="itinerary">
+
+    <div class="para">
+        <p>
+            Day 1:Check In to Manali Hotel | Local City Tour</p>
+                </p>
+        <pre>
+            Pick up from the Manali Volvo bus stand and transfer to the hotel in a regularly checked, clean, and sanitized cab.
+
+            Check-in and take some rest if required.
+
+            Visit Hidimba Devi temple, Manu temple, Vashisht temple in the afternoon time as these places are less crowded at that time.
+
+            Hot Spring, Club House, Van Vihar, and Mall road
+            
+            Return to stay by evening time. Have dinner at night in a safe dining area.
+
+            Overnight stay at Manali.
+        </pre>
+    </div>
+
+    <div class="para">
+        <p>
+            Day 2: Kullu and Manikaran Sightseeing
+            </p>
+        <pre>
+            Wake up early. Freshen up and have breakfast.
+
+            Start travelling towards Kullu (1230 meters above MSL) which is around 40km from Manali.
+
+            Enjoy the pristine nature and the streams of this sister town of Manali and visit famous temples over there.
+
+            Travel towards Manikaran (1829 meter above MSL) - 40 km from Kullu, located in the Parvati valley and known for its hot water springs
+
+            Return to the stay by evening time.
+
+            Overnight stay at Manali.
+        </pre>
+    </div>
+
+    <div class="para">
+        <p>Day 3: Manali - Manikaran (85 km) - Kullu (45 km) - Manali
+        </p>
+        <pre>
+            Full day excursion visiting Manikaran.
+
+            Manikaran has the World’s hottest Sulfur
+
+            Spring Waters and is a holy place for Hindus & Sikhs alike.
+
+            Return back to Kullu town en-route visiting the famous Kullu Shawl Industry.
+
+            Drive back to Manali. Check-in at the Hotel in Manali.
+
+            Overnight stay at the Hotel in Manali.
+        </pre>
+    </div>
+
+    <div class="para">
+        <p>Day 4: 
+            Manali - Departure
+            </p>
+            <pre>
+                After breakfast take a Volvo bus and drive back to your destination with loads of memories for a lifetime.
+            </pre>
+    </div>
+</section>
+<section class="booknow">
+  <footer  class="footer-copyright">
+      <div class="container">
+              <div class="row">
+  
+                  <div class="col-sm-3">
+                      <div class="single-footer-item">
+                          <div class="footer-logo">
+                              <a href="index.html">
+                                  Travel<span>  Bug</span>
+                              </a>
+                              <p>
+                                  Go where your heart takes you
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="row">
+                      <div class="single-footer-item">
+                          <h2>link</h2>
+                          <div class="single-footer-txt">
+                              <p><a href="#">home</a></p>
+                              <p><a href="#">destinations</a></p>
+                              <p><a href="#">gallery</a></p>
+                              <p><a href="#">contacts</a></p>
+                          </div>
+                      </div>
+  
+                  </div>
+  
+                  <div class="row">
+                      <div class="single-footer-item">
+                          <h2>selected destinations</h2>
+                          <div class="single-footer-txt">
+                              <p><a href="#">Manali</a></p>
+                              <p><a href="#">Goa</a></p>
+                              <p><a href="#">Sikkim</a></p>
+                              <p><a href="#">Rajasthan</a></p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="row">
+                      <div class="single-footer-item text-center">
+                          <h2 class="text-left">contacts</h2>
+                          <div class="single-footer-txt text-left">
+                              <p>+91 9996784465</p>
+                              <p class="foot-email"><a href="#">Fa4project@awd.com</a></p>
+                              <p>India</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          <hr>
+  </footer>
+  </section>
+  
+
+</body>
+</html>

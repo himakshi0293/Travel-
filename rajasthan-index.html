@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tour-style.css">
+    
+    <title>Rajasthan</title>
+</head>
+<body>
+    <nav class="navbar background" >
+        <ul class="nav-list ">
+            <div class="logo"><img src="img/img.jpg" alt="logo" width="220"></div>
+            <li><a href="index.html">Home</a></li>
+           <li><a href ="#itinerary">Itinerary</a></li>
+           <li><a href="rajasthan-places.html" target="_self">Places To Visit</a></li>
+          <li><a href="rajasthan-things.html" target="_self">Things To Do</a></li>
+          <li><button id="book-now">Book Now</button></li>
+         
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Book Now</h2>
+              </div>
+              <div class="modal-body">
+                <form action="reservation.php" method="post">
+                    <div class="elem-group">
+                      <label for="name">Your Name</label>
+                      <input type="text" id="name" name="visitor_name" placeholder="Abc" pattern=[A-Z\sa-z]{3,20} required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="email">Your E-mail</label>
+                      <input type="email" id="email" name="visitor_email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="phone">Your Phone</label>
+                      <input type="tel" id="phone" name="visitor_phone" placeholder="902-847-8276" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                    </div>
+                    <hr>
+                    <div class="elem-group inlined">
+                      <label for="adult">Adults</label>
+                      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="child">Children</label>
+                      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkin-date">Check-in Date</label>
+                      <input type="date" id="checkin-date" name="checkin" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkout-date">Check-out Date</label>
+                      <input type="date" id="checkout-date" name="checkout" required>
+                    </div>
+                    <hr>
+                    <div class="elem-group">
+                      <label for="message">Anything Else?</label>
+                      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                    </div>
+                    <button type="submit" class="button">Book Your Package</button>
+                  </form>
+            
+              </div>
+              <div class="modal-footer">
+                <h3></h3>
+                <p><br>
+                <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </ul> 
+        <script src="js/book.js">
+        </script>
+    </nav> 
+    
+    <div class="alert" id="home">
+        <strong ><b>Warning!</b></strong>
+        <p class="alert-font">Covid-19 cases are increasing day by day.Its mandatory to wear mask and mantain social distancing<br>
+          Check the State Wise latest guidelined for Covid-19.<a href="covidguidelines.html">Check details</a>
+      </p>
+      </div>
+    <section class="background firstSection">
+        <div class="box-main" id="home">
+            <div class="firsthalf">
+                <h1 class="text-big">UDAIPUR JODHPUR JAISALMER TOUR</h1>
+                <div class="entity-header-text holiday-duration">
+                    8 Days , 7 Nights<br>
+                    INR 11,999 <div class="txt">per person</div>
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="overview">
+   <div class="page-content-wrapper true " id="overview">
+       <div class="main-section-wrapper">
+        <section class="pageContentSection">
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Duration</h3>
+                <div class="more-info-description">
+                  8 Days , 7 Nights<br> Uncover the Land of the Kings 
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Pricing</h3>
+                <div class="more-info-description">
+               INR 11,999 <br>
+               including hotel stay and car rent  for sight seeing
+                </div>
+            </div>
+            <div class="more-info-box"> 
+                 <h3 class="more-info-heading">Holiday</h3>
+                 <div class="more-info-description">
+                    Udaipur - The Tranquil City Of Lakes<br>
+                    Jodhpur - Wander Around The Blue City<br>
+                    Jaisalmer - The Glden City Straight Out Of Arabian Nights
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Places to Visit</h3>
+                <div class="more-info-description">
+                    <b>Udaipur:</b><br>
+                    The Lake Palace, City Palace, Jagdish Temple, Monsoon Palace,etc <br>
+                    <b>Jodhpur:</b><br>
+                    Mehrangarh Fort, Khejarla Fort, Umaid Bhavan Palace Museum,etc<br>
+                    <b>Jaisalmer:</b><br>
+                    Jaisalmer Fort, Sam Sand Dunes, Gadsisar Lake, Patwon ki Haveli,etc...
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Things to do</h3>
+                <div class="more-info-description">
+                    Hathi Pol & Bada Bazaar, Udaipur<br>
+                    Zip Lining, Jodhpur<br>
+                    Desert Festival, Jaisalmer...
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Places to eat</h3>
+                <div class="more-info-description">
+                   
+                    Natraj Dining Hall & Restaurant Udaipur<br>
+                    Kesar Heritage Restaurant Jodhpur<br>
+                    The Trio Jaisalmer<br>
+                   
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Resorts</h3>
+                <div class="more-info-description">
+                    Bhairavgarh Resort Udaipur - 2 Meals,Terrace pool
+                    The Ajit Bhawan Jodhpur - Outside Pool, Meal
+                    Moonlight Nature Jaisalmer - Pool, Vegetation
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Weather and Best Time</h3>
+                <div class="more-info-description">
+                    September to March
+                    Summer (March-June), Winter (October-March), Monsoon (July-September)
+                </div>
+            </div>
+
+          </section>
+        </div> 
+     </div>
+    </section>
+     <section class="space"></section>
+<section class="worth" id="itinerary">
+    <div class="para">
+        <p>Day 1: Arrival at Udaipur Airport</p>
+        <pre>
+            Upon your arrival at Udaipur airport, you will be escorted to your hotel by our representative.
+        
+            After you complete your check-in process, you can start with your city tour.
+        
+            The first destination of your day will be the <b>The Lake Palace</b>. 
+        
+            Later on, you can head to <b>Hathi Pol</b> for some shopping. 
+        
+            The place is an important market in Udaipur where you can find a huge variety of handicrafts and folk arts of Rajasthan.
+        
+            You can then return to your hotel for the night stay and dinner.
+        </pre>
+        </div>
+        
+        <div class="para">
+            <p>Day 2: Sightseeing in Udaipur</p>
+            <pre>
+                After having breakfast at the hotel, you can re-start your city tour.
+        
+                Today you will begin your day by visiting the<b> Kumbhalgarh Fort</b>.
+                
+                This beautiful palace is called the ‘Badal Mahal’ also known as the Palace of Clouds.
+        
+                After the tour of the fort, you will visit the <b>Sahelion Ki Bari garden</b>. 
+                
+                Later on, you will head to the <b>Fateh Sagar Lake</b>. 
+        
+                End your day, by heading back to your hotel for the overnight stay.
+            </pre>
+            </div>
+        
+          
+        
+        <div class="para">
+            <p>Day 3: Sightseeing in Udaipur</p>
+            <pre>
+                Enjoy a healthy breakfast at the hotel and then head out in the city for the sightseeing of the day.
+        
+                Begin your tour with the amazing <b>Monsoon Palace</b>.
+                 
+                The Monsoon Palace, formerly known as the Sajjangarh Palace, is a hilltop palatial residence in the city.
+        
+                Later on, you can head to the <b>Car Museum</b>.
+        
+                Post this fun day in the city, you can go back to your hotel for dinner and night stay.
+        
+        
+            </pre>
+        </div>
+        
+        <div class="para">
+            <p>Day 4: Travel Udaipur to Jodhpur (250.6kms/4 hrs.35 minutes)</p>
+            <pre>
+                Today you will be travelling to Jodhpur.
+                
+                It should take you around 4 hours 35 minutes to reach your destination.
+        
+                After your check-in process at the hotel, you can leave for the city tour.
+                
+                You will begin your tour with the <b>Mehrangarh Fort</b>.
+                
+                The fort is one of the most famous attractions of the city.
+                
+                It is one of the most visited places in Jodhpur with tourists rushing from all over the world.
+                
+                You must take an entire tour of the fort and explore its beautiful interiors and then head back to your hotel to catch up on some rest.
+            </pre>
+        </div>
+        
+        
+        <div class="para">
+            <p>Day 5: Sightseeing in Jodhpur</p>
+            <pre>
+                You can begin your day with a delicious breakfast at your hotel and then go out to visit the other attractions of the city.
+                
+                Today you will first visit the <b>Umaid Bhavan Palace</b>.
+                
+                Later on, you will head to the <b>Jaswant Thada</b>. The beauty of this attraction point is sometimes compared to that of the Taj Mahal. 
+                
+                Your last destination in the city will be <b>Kaylana Lake</b>. 
+                
+                A picture of the beautiful sunset and the migratory Siberian Cranes is a must when you visit this humungous lake. 
+                
+                You can then return to your hotel for a good night’s sleep.
+            </pre>
+        </div>
+        
+        <div class="para">
+            <p>Day 6: Travel Jodhpur to Jaisalmer (284.1 kms/4 hours)</p>
+            <pre>  
+                Be ready for yet another road trip, this time to Jaisalmer.
+                
+                The distance you need to cover is 284.1 kms and it should take you around 4 hours to reach your destination.
+                
+                On your arrival, complete your check-in process.Today you are going to visit the <b>Thar Desert</b> for some adventure activities.
+                
+                There are a number of options to pick from; you can choose to try out Paragliding, Dune Bashing, Quad Biking, Camel Safari or even all of these.
+        
+                You can then head towards your hotel for the night stay.
+            </pre>
+        </div>
+        
+        <div class="para">
+            <p>Day 7: Sightseeing in Jaisalmer</p>
+            <pre>
+                Your first destination of the day will be the <b>Jaisalmer Fort</b>, it’s also known as the Golden Fort or Sonar Quila.
+        
+                After visiting the fort you can head towards the <b>Jaisalmer Government Museum</b>. 
+        
+                Lastly, you can make your way to <b>Gadisar Lake</b>. Also, watch out for the different species of birds, which migrate from distinct places.
+        
+                You can then head back to your hotel and start packing for your departure the next day.
+            </pre>
+        </div>
+        
+        <div class="para">
+            <p>Day 8: Departure from Jaisalmer</p>
+            <pre>
+                Today you will reach the end of your Udaipur Jodhpur Jaisalmer holiday package and you will head to the Jaisalmer airport for your flight back home.
+                
+                We hope you had a wonderful trip and we hope to see you soon.
+            </pre>
+        </div>       
+</section>
+
+<section class="booknow">
+    <footer  class="footer-copyright">
+        <div class="container">
+               
+                <div class="row">
+    
+                    <div class="col-sm-3">
+                        <div class="single-footer-item">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    Travel<span>  Bug</span>
+                                </a>
+                                <p>
+                                    Go where your heart takes you
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="single-footer-item">
+                            <h2>link</h2>
+                            <div class="single-footer-txt">
+                                <p><a href="#">home</a></p>
+                                <p><a href="#">destinations</a></p>
+                                <p><a href="#">gallery</a></p>
+                                <p><a href="#">contacts</a></p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="row">
+                        <div class="single-footer-item">
+                            <h2>selected destinations</h2>
+                            <div class="single-footer-txt">
+                                <p><a href="#">Manali</a></p>
+                                <p><a href="#">Goa</a></p>
+                                <p><a href="#">Sikkim</a></p>
+                                <p><a href="#">Rajasthan</a></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="single-footer-item text-center">
+                            <h2 class="text-left">contacts</h2>
+                            <div class="single-footer-txt text-left">
+                                <p>+91 9996784465</p>
+                                <p class="foot-email"><a href="#">Fa4project@awd.com</a></p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+    </footer>
+    </section>
+      
+
+</body>
+</html>

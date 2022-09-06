@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid guidelines</title>
+    <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+/*navigation bar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+  
+  .dropdown {
+    float: left;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown:hover .dropbtn {
+    color: gray;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+
+.nav-list{
+     width: 50%;
+     display: flex;
+     justify-content: left;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+.covid-img{
+  margin-left: 500px;
+}
+
+.rules{
+  text-align: center;
+  font-size: large;
+}
+
+.background{
+    background: rgba(0,0, 0, 0.7) url('../img/bg2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.img{
+  display: contents;
+}
+
+.drop {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .drop:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+h2{
+  margin: 8px;
+}
+p{
+  margin: 8px;
+}
+
+.row{
+  display: -webkit-inline-box;
+  margin-left: 40px;
+    padding: 55px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .single-footer-item{
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+  }
+  .single-footer-item h2{
+      color:#565a5c;
+      font-size:16px;
+      font-weight: 600;
+      margin-bottom:40px;
+  }
+  .footer-logo {
+      padding-top: 76px;
+  }
+  .footer-logo a, .footer-logo a:hover,.footer-logo a:focus {
+      color: #565a5c;
+      font-size:24px;
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin: 14px 0px 0;
+      padding: 10px 0 0 0;
+  }
+  .footer-logo a>span {
+      color: #00d8ff;
+      text-transform: capitalize;
+  } 
+  .footer-logo p{
+      color: #aaa;
+      font-size:16px;
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+  }
+  
+  .single-footer-txt p{
+      margin-bottom:8px;
+  }
+  .single-footer-txt p a{
+      color:#565a5c;
+      font-size:16px;
+      -webkit-transition: .5s ease-in-out; 
+      -moz-transition:.5s ease-in-out; 
+      -ms-transition:.5s ease-in-out; 
+      -o-transition:.5s ease-in-out;
+      transition: .5s ease-in-out;
+      
+  }
+  
+  .footer-copyright hr{
+      border-top: 1px solid #ebebeb;
+  }
+  
+
+</style>
+</head>
+<body>
+    <nav class="navbar background" >
+        <ul class="nav-list">
+            <div class="logo"><img src="img/img.jpg" alt="logo" class=""></div>
+            <li><a href="index.html">Home</a></li>
+           <li> <div class="dropdown">
+                <button class="dropbtn">Packages
+                </button>
+                <div class="dropdown-content">
+                  <a href="manali-index.html">MANALI</a>
+                  <a href="goa-index.html">GOA</a>
+                  <a href="sikkim-index.html">SIKKIM</a>
+                  <a href="rajasthan-index.html">RAJASTHAN</a>
+                </div>
+              </div> </li>
+        </ul>
+    </nav>
+    <section class="covid-img">
+      <img src="img/heading.jpg" alt="covid">
+    </section>
+
+
+<section class="guideline">
+  <section class="rules">
+  <h2>Recommended: Get a COVID-19 test before you travel </h2>
+<p>Follow <b>SMS</b> rule:<br>
+  <b>S</b> - <b>S</b>anitization<br>
+  <b>M</b> - wear <b>M</b>ask<br>
+  <b>S</b> - <b>S</b>ocial Distancing</p>
+</section>
+
+<button class="drop">Manali</button>
+<div class="panel">
+  <h4>Quarantine and Testing Rules</h4>
+  <ul>
+    <li>All passengers must download Aarogya Setu App.</li>
+    <li>E-passes/ permissions not required for inter-state travel.</li>
+    <li>For passengers arriving from red zone districts outside of Himachal Pradesh, carrying a COVID-19 negative test report from ICMR authorized lab, not older than 48 hours from the date of departure,14 days of Home Quarantine is allowed.</li>
+    <li>14 days of institutional quarantine is required for passengers arriving from any Red Zone district outside of Himachal Pradesh or passengers having ILI (Influenza Like Illness) symptoms irrespective of the zone from where they are arriving.</li>
+  </ul>
+</div>
+
+<button class="drop">Goa</button>
+<div class="panel">
+  <h4>Mandatory for Travellers</h4>
+  <ul>
+    <li>It is mandatory to download the Aarogya Setu app before entering the state.</li>
+    <li>It is mandatory to carry a facemask and maintain social/ physical distancing when in public areas.</li>
+    <li> A night curfew has been enforced in Goa between 10 p.m. and 6 a.m. till 30th April.</li>
+  </ul>
+  <h4>Quarantine and Testing Rules</h4>
+  <ul>
+    <li>Domestic travellers do not have to quarantine.</li>
+    <li>nternational travellers entering the state must check Government-issued guidelines on registration, quarantine and testing protocols.</li> 
+  </ul>
+</div>
+
+<button class="drop">Sikkim</button>
+<div class="panel">
+ <h4>Quarantine and Testing Guidelines</h4>
+ <ul>
+   <li>All tourists entering Sikkim are advised to carry a negative RT-PCR/TrueNat test certificate with them (conducted within 72 hours of travel).</li>
+   <li>If any tourist arrives without a test, then hotel/ homestay owners have been directed by the government to ensure that they are able to get one done at the nearest COVID testing centres at specified testing locations in the state.</li>
+   <li>For those who have a negative RT-PCR test report but whose 72 hours' limit has expired, Rapid Antigen Testing (RAT) facilities will be set up at Rangpo/Melli by the Health and Family Welfare Department.</li>
+   <li>Tourists are required to fill in all details in the forms available under the tab for tourists in the Tourism Portal <a href="https://sikkimtourism.gov.in">https://sikkimtourism.gov.in</a>.</li>
+   <li>A Travel card can be downloaded after filling all the sections and entering relevant details and must be shown at the entry point at Rangpo/Melli.</li>
+   <li>Tourists must carry this card with them wherever they go and update it daily.</li>
+ </ul>
+</div>
+
+<button class="drop">Rajasthan</button>
+<div class="panel">
+  <h4>Mandatory for Travellers</h4>
+  <ul>
+    <li>Download and update the Aarogya Setu App</li>
+    <li>Submit a Self-Health Declaration form on arrival.</li>
+    <li>From 16th till 30th April, a night curfew has been announced in all cities from 6 p.m. till 6 a.m. daily.</li>
+  </ul>
+  <h4>Quarantine and Testing Guidelines</h4>
+  <ul>
+    <li>Arriving passengers arriving must carry a COVID-19 RT-PCR negative test report from an ICMR approved lab, conducted within 72 hours before arrival.</li>
+    <li>Those arriving without a test must quarantine for 15 days, at their own expense.</li>
+    <li>All visitors to Udaipur must produce a negative RT-PCR test if they wish to book a hotel room. They must also upload a copy of their test report on <a href="http://emitra.rajasthan.gov.in">http://emitra.rajasthan.gov.in</a>.</li>
+    <li>International travellers entering the state must check Government-issued guidelines on registration, quarantine and testing protocols </li>
+  </ul>
+</div>
+
+</section>
+
+<script src="js/covid.js">
+</script>
+
+<section class="precautions">
+  <div class="img">
+    <img src="img/covid_norms.jpg" alt="" width="400">
+  </div>
+
+  <div class="img">
+  <img src="img/vaccine.jpg" alt="" width="400">
+</div>
+
+<div class="img">
+  <img src="img/covidt.jpg" alt="" width="400">
+</div>
+</section>
+
+
+<section class="booknow">
+  <footer  class="footer-copyright">
+      <div class="container">
+              <div class="row">
+  
+                  <div class="col-sm-3">
+                      <div class="single-footer-item">
+                          <div class="footer-logo">
+                              <a href="index.html">
+                                  Travel<span>  Bug</span>
+                              </a>
+                              <p>
+                                  Go where your heart takes you
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="row">
+                      <div class="single-footer-item">
+                          <h2>link</h2>
+                          <div class="single-footer-txt">
+                              <p><a href="#">home</a></p>
+                              <p><a href="#">destinations</a></p>
+                              <p><a href="#">gallery</a></p>
+                              <p><a href="#">contacts</a></p>
+                          </div>
+                      </div>
+  
+                  </div>
+  
+                  <div class="row">
+                      <div class="single-footer-item">
+                          <h2>selected destinations</h2>
+                          <div class="single-footer-txt">
+                              <p><a href="#">Manali</a></p>
+                              <p><a href="#">Goa</a></p>
+                              <p><a href="#">Sikkim</a></p>
+                              <p><a href="#">Rajasthan</a></p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="row">
+                      <div class="single-footer-item text-center">
+                          <h2 class="text-left">contacts</h2>
+                          <div class="single-footer-txt text-left">
+                              <p>+91 9996784465</p>
+                              <p class="foot-email"><a href="#">Fa4project@awd.com</a></p>
+                              <p>India</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          <hr>
+  </footer>
+  </section>
+  
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tour-style.css">
+    
+    <title>Goa</title>
+</head>
+<body>
+    <nav class="navbar background" >
+        <ul class="nav-list">
+            <div class="logo"><img src="img/img.jpg" aHlt="logo"></div>
+            <li><a href="index.html">Home</a></li>
+           <li><a href ="#itinerary">Itinerary</a></li>
+           <li><a href="goa-places.html" target="_self">Places To Visit</a></li>
+           
+           <li><a href="goa-things.html" target="_self">Things To Do</a></li>
+         
+          <li><button id="book-now">Book Now</button></li>
+        </ul>
+
+        
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Book Now</h2>
+              </div>
+              <div class="modal-body">
+                <form action="reservation.php" method="post">
+                    <div class="elem-group">
+                      <label for="name">Your Name</label>
+                      <input type="text" id="name" name="visitor_name" placeholder="Abc" pattern=[A-Z\sa-z]{3,20} required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="email">Your E-mail</label>
+                      <input type="email" id="email" name="visitor_email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="phone">Your Phone</label>
+                      <input type="tel" id="phone" name="visitor_phone" placeholder="902-847-8276" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                    </div>
+                    <hr>
+                    <div class="elem-group inlined">
+                      <label for="adult">Adults</label>
+                      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="child">Children</label>
+                      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkin-date">Check-in Date</label>
+                      <input type="date" id="checkin-date" name="checkin" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkout-date">Check-out Date</label>
+                      <input type="date" id="checkout-date" name="checkout" required>
+                    </div>
+                    <hr>
+                    <div class="elem-group">
+                      <label for="message">Anything Else?</label>
+                      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                    </div>
+                    <button type="submit" class="button">Book Your Package</button>
+                  </form>
+            
+              </div>
+              <div class="modal-footer">
+                <h3></h3>
+                <p><br>
+                <br>
+                </p>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <script src="js/book.js">
+    </script> 
+
+<div class="alert" id="home">
+  <strong ><b>Warning!</b></strong>
+  <p class="alert-font">Covid-19 cases are increasing day by day.Its mandatory to wear mask and mantain social distancing<br>
+    Check the State Wise latest guidelined for Covid-19.<a href="covidguidelines.html">Check details</a>
+</p>
+</div>
+
+    <section class="background firstSection">
+        <div class="box-main" id="home">
+            <div class="firsthalf">
+                <h1 class="text-big">A FAMILY GATEWAY TO GOA WITH TAJ RESORTS</h1>
+                <div class="entity-header-text holiday-duration">
+                    4 days , 3 nights<br>
+                    INR 7,500 <div class="txt">per person</div>
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+   <div class="page-content-wrapper true " id="overview">
+       <div class="main-section-wrapper">
+        <section class="pageContentSection">
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Duration</h3>
+                <div class="more-info-description">
+                  4 days , 3 nights<br> That promises you the most memorable time of your life.
+
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Pricing</h3>
+                <div class="more-info-description">
+               INR 18,999 <br>
+               including hotel stay and car rent  for sight seeing
+                </div>
+            </div>
+            <div class="more-info-box"> 
+                 <h3 class="more-info-heading">Holiday</h3>
+                 <div class="more-info-description">
+                    Trip to north and south Goa.
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Places to Visit</h3>
+                <div class="more-info-description">
+                    
+                        Calangute Beach<br>
+                        Baga Beach<br>
+                        Tito's Street<br>
+                        Dudhsagar Waterfalls<br>
+                    
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Things to do</h3>              
+                 <div class="more-info-description">
+                    
+                        Sea-Sports<br>
+                        Sun-Bath<br>
+                        Ship-Cruise<br>
+                   
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Places to eat</h3>
+                <div class="more-info-description">
+                 
+                       Calamari<br>
+                       The Black Sheep Bistro<br>
+                       Mum's Kitchen<br>
+                  
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Resorts</h3>
+                <div class="more-info-description">
+                    Riva Beach Resort<br>
+                   Beleza By The Beach<br>
+                </div>
+            </div>
+            <div class="more-info-box">
+                <h3 class="more-info-heading">Weather and Best Time</h3>
+                <div class="more-info-description">
+                    Best time to enjoy Goa is October to March.
+                </div>
+            </div>
+
+          </section>
+        </div> 
+     </div>
+
+<section class="space"></section>
+<section class="worth" id="itinerary">
+    
+     <div class="para" >
+        <p>Day 1: Arrival in Goa</p>
+        <pre>
+            Welcome to the party capital of India. Your 4-day Goa tour package starts now.
+        
+            As you arrive at the Goa airport/railway station, an agent’s representativewill receive you and escort you to the hotel.
+              Complete-check-in formalities and relax for some time.
+             
+            Spend the entire first day of your Goa trip leisurely. 
+         
+             Explore the sun-kissed beaches of Goa or try some amazing
+              Goan delicacies like pork vindaloo and Goan fish curry. 
+        
+              As you bid goodbye today one of your Goa holiday, 
+              come back to the hotel and have a goodnight’s sleep.
+        </pre>
+        </div>
+        
+        <div class="para">
+            <p>Day 2:North Goa Sightseeing tour </p>
+            <pre>
+            The second day of your holiday takes you to explore the gems of North Goa.
+
+            Have breakfast and get ready to embark on a full-day North Goa sightseeing tour. 
+
+            The first attraction that you will visit on your North Goa tour is the ancient Fort Aguada. 
+            
+            Later, explore Coco Beach, Calangute Annexe, Calangute Beach, Baga Beach and Anjuna Beach that will have some watersports included (as per your wish).
+        
+            As the second day of your Goa tour itinerary comes to an end, come back to the hotel and sleep off the night.
+        </pre>
+            </div>
+        
+          
+        
+        <div class="para">
+            <p>Day 3: South GoaSightseeing tour</p>
+            <pre>
+                Today on your Goa vacation, explore the eye-catching attractions of South Goa.
+
+                Relish a delicious breakfast and get ready to explore the tourist hotspots of South Goa on the third day of your Goa tour.
+
+                Visit Shri Shantadurga Temple at Kavlem and Shri Manguesh Temple at Priol.
+
+                Next, take a trip to the churches of Old Goa like Basilica of Bom Jesus and Se Cathedral. 
+
+                Post lunch, visit the Dona Paula Bay and Miramar Beach. Later on, your Goa holiday, indulge in street shopping at the Panjim Market.
+
+                In the evening, enjoy boat cruise at the Mandovi River. Towards the end of the day, return to the hotel and sleep off the night.
+
+        
+            </pre>
+                </div>
+        
+        <div class="para">
+            <p>Day 4: Departure from Goa</p>
+            <pre>
+                This is the last day of your 4-day Goa tour package. 
+                
+                Bid goodbye to Goa with nostalgic memories.
+
+                Post breakfast, check-out from the hotel and you will be transferred to the airport/railway station to reach your home destination, 
+                thereby, marking an end to your fun-filled Goa holiday.
+            </pre>
+        </div>
+  </section>
+
+  <section class="booknow">
+    <footer  class="footer-copyright">
+        <div class="container">
+             
+                <div class="row">
+    
+                    <div class="col-sm-3">
+                        <div class="single-footer-item">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    Travel<span>  Bug</span>
+                                </a>
+                                <p>
+                                    Go where your heart takes you
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="single-footer-item">
+                            <h2>link</h2>
+                            <div class="single-footer-txt">
+                                <p><a href="#">home</a></p>
+                                <p><a href="#">destinations</a></p>
+                                <p><a href="#">gallery</a></p>
+                                <p><a href="#">contacts</a></p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="row">
+                        <div class="single-footer-item">
+                            <h2>selected destinations</h2>
+                            <div class="single-footer-txt">
+                                <p><a href="#">Manali</a></p>
+                                <p><a href="#">Goa</a></p>
+                                <p><a href="#">Sikkim</a></p>
+                                <p><a href="#">Rajasthan</a></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="single-footer-item text-center">
+                            <h2 class="text-left">contacts</h2>
+                            <div class="single-footer-txt text-left">
+                                <p>+91 9996784465</p>
+                                <p class="foot-email"><a href="#">Fa4project@awd.com</a></p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+    </footer>
+    </section>
+    
+ 
+</body>
+</html>
